@@ -77,3 +77,51 @@ main p {
     font-weight: bold;
     font-size: 16px;
 }
+
+#filter {
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#filter {
+    display: flex;
+}
+
+#filter h2 {
+    margin-top: 32px;
+}
+
+.filter_class {
+    display:flex;
+    margin-top: 18px;
+    margin-left: 48px;
+    padding-right: 16px;
+    border-radius: 30px;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #DCDCDC;
+    border-width: 3px;
+}
+
+.filter_class i {
+    margin: -5px;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    padding: 20px;
+    border-radius: 50%;
+    color: #0065FC;
+    font-size: 24px;
+} 
+
+.filter_class p {
+    padding-top: 22px;
+    padding-left: 16px;
+    font-weight: bold;
+}
+
+.filter_class:hover {
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
