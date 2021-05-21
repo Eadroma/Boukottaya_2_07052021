@@ -1,13 +1,14 @@
 body {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
+    padding: 0 20px;
     margin-left: 50px;
     font-family: "Raleway", sans-serif;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 nav img {
