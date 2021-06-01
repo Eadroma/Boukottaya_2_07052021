@@ -1,15 +1,17 @@
 body {
-    padding: 0 25px;
+    margin: 0px;
     font-family: "Raleway", sans-serif;
 }
 
 header {
+    padding: 0 25px;
     max-width: 1400px;
     margin: auto;
     padding: 0 2rem;
 }
 
 main {
+    padding: 0 25px;
     max-width: 1400px;
     margin: auto;
     padding: 0 2rem;
@@ -226,6 +228,10 @@ main p {
     width: 37%;
 }
 
+#hotel_content h5:hover {
+    color: #0065fc;
+}
+
 #hotel_content h5 {
     margin: 0px;
     margin-left: 28px;
@@ -340,8 +346,34 @@ main p {
     text-decoration: none;
 }
 
+#Marseille_Activity a:hover {
+    color: #0065fc;
+}
+
 #Marseille_Activity p {
     font-weight: 800;
     margin: 10px 0px 10px 10px;
     font-size: 16px;
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background: #f2f2f2;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul {
+    margin-right: 322px;
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #0065fc;
 }
