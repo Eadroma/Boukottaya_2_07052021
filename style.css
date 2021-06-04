@@ -5,20 +5,17 @@ body {
 
 header {
     padding: 0 25px;
-    max-width: 1400px;
     margin: auto;
     padding: 0 2rem;
 }
 
 main {
-    padding: 0 25px;
     max-width: 1400px;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
 }
 nav {
-    max-width: 1400px;
     display: flex;
     justify-content: space-between;
 }
@@ -73,6 +70,8 @@ main p {
 }
 
 #searchbar {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: inline-block;
 }
 
@@ -85,9 +84,8 @@ main p {
 
 #searchbar input {
     padding: 16px;
-    border-color: #f2f2f2;
-    border-width: 0px;
     margin-left: 0px;
+    border: 1px solid #f2f2f2;
 }
 
 #searchbar input::placeholder {
@@ -108,17 +106,29 @@ main p {
 }
 
 #filter ul {
+    padding-left: 10px;
     list-style: none;
 }
 
+.fa-info:before {
+    content: "\f129";
+    font-size: 10px;
+}
+
 #filter {
+    margin-bottom: 10px;
     display: inline-flex;
     flex-direction: row;
     font-size: 14px;
     align-items: center;
 }
 
+#filter h2 {
+    font-size: 16px;
+}
+
 #filter li {
+    cursor: pointer;
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
@@ -145,8 +155,8 @@ main p {
     position: absolute;
     top: -1px;
     left: -5px;
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 17px;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -160,6 +170,7 @@ main p {
 }
 
 #info {
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
@@ -168,13 +179,12 @@ main p {
 }
 
 #info i {
-    padding-top: 6px;
     text-align: center;
     color: #0065fc;
     border: 1px solid #deebff;
     height: 18px;
     border-radius: 50%;
-    width: 24px;
+    width: 18px;
 }
 
 #info span {
@@ -196,6 +206,10 @@ main p {
     height: fit-content;
 }
 
+#hotel_center h3{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
 
 #hotel_center img {
     width: 100%;
@@ -217,15 +231,15 @@ main p {
     border: 1px solid white;
     border-radius: 25px;
     background-color: white;
-    flex: 1 0 25%;
     max-width: 250px;
     box-shadow: 0 0 16px #0000002e;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #hotel_content a {
-    margin-left: -34px;
     text-decoration: none;
-    width: 37%;
+    width: 33%;
 }
 
 #hotel_content h5:hover {
@@ -314,14 +328,22 @@ main p {
 
 
 #Marseille_Activity {
-    width: 100%;
-    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    margin: auto;
+    margin-bottom: 3rem;
 }
 
+.activity_card2 {
+    max-height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity_card2 figure {
+    margin-bottom: 500px;
+}
 .activity_card img {
     width: 300px;
     height: 468px;
@@ -337,12 +359,14 @@ main p {
 }
 
 #Marseille_Activity figure {
+    margin: 0;
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
 }
 
 #Marseille_Activity a {
+    color: black;
     text-decoration: none;
 }
 
@@ -359,14 +383,18 @@ main p {
 footer {
     margin: 0px;
     padding: 0px;
-    display: flex;
     background: #f2f2f2;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
-footer ul {
-    margin-right: 322px;
+#footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+
+#footer_content ul {
     list-style: none;
 }
 footer a {
@@ -376,4 +404,8 @@ footer a {
 
 footer a:hover {
     color: #0065fc;
+}
+
+#Activity_title {
+    margin-top: 30px;
 }
