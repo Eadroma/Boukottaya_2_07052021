@@ -20,7 +20,7 @@ nav {
     justify-content: space-between;
 }
 
-nav img {
+header img {
     padding-top: 16px;
 }
 
@@ -415,31 +415,81 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1200px) {
+
+    main {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        position: relative;
+        padding: 0px;
+    }
+
+    header img {
+        padding: 20px 0px 0px 50px;
+    }
+    header li:last-child {
+        position: absolute;
+        bottom: 98px;
+        right: 5px;
+    }
+
+    header li {
+        align-items: center;
+        width: 50%;
+        margin-right: 0px;
+    }
+
     nav ul {
-        margin-top: 40px;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding-bottom: 4px;
+        border-bottom: 3px #f2f2f2 solid;
+        padding-left: 5rem;
+        width: 72%;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px #0065fc solid;
+    }
+
+    #signup {
+        border-bottom: none;
+    }
+
+    #top-main {
+        padding: 0 2rem;
+    }
+    #hotel_content {
         flex-direction: column-reverse;
     }
 
-    #nav-ancre {
-        margin-right: 500px;
-        flex-direction: row;
+    #hotel_aside {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #hotel_center {
+        width: 100%;
+        border-radius: 0px;
+        background: none;
+    }
+
+    #hotel_center a {
+        width: 100%;
     }
     
-    header a:hover  {
-        border-top: 0px;
-        color: #0065fc;
-        border-bottom: 2px solid; 
-        padding-bottom: 20px;   
+    #hotel_center figure {
+        max-width: none;
+        width: 80%;
     }
-
-    #hotel_content {
-        flex-direction: column;
-    }
-
-    #hotel_content a {
-        width: 52%;
-    }
-
     #Marseille_Activity {
         flex-direction: column;
     }
@@ -462,5 +512,9 @@ footer a:hover {
     }
     .activity_card2 a {
         display: flex;
+    }
+
+    #footer_content {
+        flex-direction: column;
     }
 }
