@@ -18,6 +18,7 @@ main {
     padding: 0 2rem;
     box-sizing: border-box;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,7 @@ nav li {
 }
 
 header a {
+    border-top: 3px solid transparent;
     font-size: 14px;
     font-weight: 400;
     color: black;
@@ -65,7 +67,7 @@ section {
 }
 
 main h1 {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 4px;
     font-size: 18px;
 }
@@ -76,32 +78,32 @@ main p {
     font-size: 14px;
 }
 
-#searchbar {
+#searchbar-desktop {
     margin-top: 5px;
     margin-bottom: 5px;
     display: inline-block;
 }
 
-#searchbar i {
+#searchbar-desktop i {
     margin-right: 0px;
     padding: 16px;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
 
-#searchbar input {
+#searchbar-desktop input {
     padding: 16px;
     margin-left: 0px;
     border: 1px solid #f2f2f2;
 }
 
-#searchbar input::placeholder {
+#searchbar-desktop input::placeholder {
     font-weight: 700;
     color: black;
     font-size: 16px;
 }
 
-#searchbar button {
+#searchbar-desktop button {
     border-radius: 0px 10px 10px 0px;
     border-width: 0px;
     color: #f2f2f2;
@@ -112,6 +114,9 @@ main p {
     cursor: pointer;
 }
 
+#searchbar-mobile {
+    display: none
+}
 #filter ul {
     padding-left: 10px;
     list-style: none;
@@ -396,12 +401,12 @@ footer {
 #footer_content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     max-width: 1400px;
     margin: auto;
 }
 
 #footer_content ul {
+    margin-right: 226px;
     list-style: none;
 }
 footer a {
@@ -434,15 +439,23 @@ footer a:hover {
         padding: 20px 0px 0px 50px;
     }
     header li:last-child {
+        border: none;
         position: absolute;
         bottom: 98px;
         right: 5px;
+    }
+
+    header li:last-child:hover {
+        border: none;
     }
 
     header li {
         align-items: center;
         width: 50%;
         margin-right: 0px;
+        padding-bottom: 4px;
+        border-bottom: 3px #f2f2f2 solid;
+        text-align: center;
     }
 
     nav ul {
@@ -453,19 +466,19 @@ footer a:hover {
 
     nav a {
         display: inline-block;
-        padding-bottom: 4px;
-        border-bottom: 3px #f2f2f2 solid;
-        padding-left: 5rem;
-        width: 72%;
     }
 
-    nav a:hover {
+    header a:hover {
+        border-top: none;
+        font-weight: 400;
+    }
+    header li:hover {
         border-top: none;
         border-bottom: 3px #0065fc solid;
     }
-
-    #signup {
-        border-bottom: none;
+    
+    header li:hover * {
+        color: #0065fc;
     }
 
     #top-main {
@@ -478,12 +491,14 @@ footer a:hover {
     #hotel_aside {
         width: 100%;
         border-radius: 0px;
+        padding-bottom: 28px;
     }
 
     #hotel_center {
         width: 100%;
         border-radius: 0px;
         background: none;
+        border: none;
     }
 
     #hotel_center a {
@@ -501,24 +516,96 @@ footer a:hover {
     .activity_card {
         display: flex;
     }
+    .activity_card2 {
+        display: flex;
+    }
 
+    .activity_card a {
+        width: 91%;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .activity_card2 a {
+        width: 91%;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
     .activity_card img {
-        width: 405px;
-        height: 194px;
+        width: 100%;
+        height: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
     .activity_card2 img {
-        width: 405px;
-        height: 194px;
+        width: 100%;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
-    }
-    .activity_card2 a {
-        display: flex;
     }
 
     #footer_content {
         flex-direction: column;
+    }
+
+    #footer_content ul {
+        width: 100%;
+    }
+    #searchbar-desktop {
+        display: none;
+    }
+
+    #searchbar-mobile {
+        display: inline-flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    #searchbar-mobile i {
+        margin-right: 0px;
+        padding: 11px;
+        background-color: #f2f2f2;
+        border-radius: 10px 0px 0px 10px;
+        font-size: 12px;
+    }
+    
+    #searchbar-mobile input {
+        padding: 12px;
+        margin-left: 0px;
+        border: 1px solid #f2f2f2;
+    }
+    
+    #searchbar-mobile input::placeholder {
+        font-weight: 700;
+        color: black;
+        font-size: 12px;
+    }
+    
+    #searchbar-mobile button {
+
+        border-radius: 0px 10px 10px 0px;
+        border-width: 0px;
+        color: #f2f2f2;
+        background-color: #0065fc;
+        padding: 8px;
+        font-weight: bold;
+        font-size: 4px;
+        cursor: pointer;
+    }
+    
+    #searchbar-mobile button i {
+        background-color: #0065fc;
+        padding: 4px;
+    }
+
+    #filter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #info {
+        display: inline-flex;
+        font-size: 12px;
     }
 }
