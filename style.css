@@ -358,7 +358,7 @@ main p {
 }
 .activity_card img {
     width: 300px;
-    height: 468px;
+    height: 380px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -368,6 +368,10 @@ main p {
     height: 200px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+}
+
+.activity_card2_last img{
+    height: 100px;
 }
 
 #Marseille_Activity figure {
@@ -405,8 +409,14 @@ footer {
     margin: auto;
 }
 
+#footer_content2 {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #footer_content ul {
-    margin-right: 226px;
     list-style: none;
 }
 footer a {
@@ -501,6 +511,9 @@ footer a:hover {
         border: none;
     }
 
+    #hotel_center h3 {
+        margin-left: 20px;
+    }
     #hotel_center a {
         width: 100%;
     }
@@ -509,8 +522,14 @@ footer a:hover {
         max-width: none;
         width: 80%;
     }
+
+    #Activity_title {
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
     #Marseille_Activity {
         flex-direction: column;
+        margin-bottom: 95px;
     }
 
     .activity_card {
@@ -524,7 +543,6 @@ footer a:hover {
         width: 91%;
         margin-left: 1rem;
         margin-bottom: 2rem;
-        margin-top: 1rem;
     }
 
     .activity_card2 a {
@@ -532,19 +550,47 @@ footer a:hover {
         margin-left: 1rem;
         margin-bottom: 2rem;
     }
+
+    .activity_card figure {
+        width: 300px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
     .activity_card img {
         width: 100%;
-        height: 100%;
+        height: 200px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
+    .activity_card2 figure {
+        width: 300px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .activity_card2_last figure {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .activity_card a {
+        margin-top: 80px !important;
+    }
+
+    .activity_card2 a {
+        margin-top: 20px !important;
+    }
     .activity_card2 img {
         width: 100%;
+        height: 200px;
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
 
     #footer_content {
+        flex-direction: column;
+    }
+
+    #footer_content2 {
         flex-direction: column;
     }
 
