@@ -505,25 +505,34 @@ footer a:hover {
     }
 
     #hotel_center {
-        width: 100%;
+        width: auto;
         border-radius: 0px;
         background: none;
         border: none;
+        padding-left: 0px;
+
     }
 
+    #hotel_center_content {
+        flex-direction: column;
+        align-items: center;
+    }
     #hotel_center h3 {
         margin-left: 20px;
     }
     #hotel_center a {
-        width: 100%;
+        width: 33%;
     }
     
     #hotel_center figure {
         max-width: none;
-        width: 80%;
+        width: 300px;
     }
 
-    #Activity_title {
+    #hotel_center img {
+        height: 200px;
+    }
+    #Activity_  title {
         margin-left: 20px;
         margin-bottom: 0px;
     }
@@ -532,6 +541,10 @@ footer a:hover {
         margin-bottom: 95px;
     }
 
+
+    .activity_card2_last {
+        display: flex;
+    }
     .activity_card {
         display: flex;
     }
@@ -595,7 +608,7 @@ footer a:hover {
     }
 
     #footer_content ul {
-        width: 100%;
+        width: auto;
     }
     #searchbar-desktop {
         display: none;
@@ -650,8 +663,19 @@ footer a:hover {
         flex-direction: column;
     }
 
+    #filter h2 {
+        align-self: flex-start;
+    }
+
     #info {
         display: inline-flex;
         font-size: 12px;
+        flex-wrap: nowrap
+    }
+
+    #filter li {
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 5px
     }
 }
