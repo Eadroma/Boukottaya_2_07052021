@@ -432,7 +432,70 @@ footer a:hover {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen  and (min-width: 701px) and (max-width: 1200px) {
+    #hotel_content {
+        flex-direction: column-reverse;
+    }
+
+    #hotel_aside {
+        width: 100%;
+    }
+
+    #hotel_aside figure {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    #hotel_center {
+        padding-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #hotel_center a {
+        width: 100%;
+    }
+
+    #hotel_center figure {
+        max-width: 75%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+
+    #hotel_content h4 {
+        margin-left: 20px;
+    }
+
+    #Marseille_Activity {
+        flex-direction: column;
+    }
+
+    #Marseille_Activity figure {
+        max-width: 75%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+
+    #Marseille_Activity img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .activity_card figure:last-child {
+        margin-top: 102px !important;
+    }
+
+    #footer_content {
+        margin-top: 100px;
+    }
+
+    #footer_content2 {
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 700px) {
 
     main {
         margin: 0px;
@@ -504,6 +567,14 @@ footer a:hover {
         padding-bottom: 28px;
     }
 
+    #hotel_aside figure {
+        display: flex;
+        flex-direction: row;
+        max-width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     #hotel_center {
         width: auto;
         border-radius: 0px;
@@ -513,6 +584,7 @@ footer a:hover {
 
     }
 
+
     #hotel_center_content {
         flex-direction: column;
         align-items: center;
@@ -521,12 +593,19 @@ footer a:hover {
         margin-left: 20px;
     }
     #hotel_center a {
-        width: 33%;
+        width: 100%;
     }
     
+    #hotel_content h4 {
+        margin-left: 20px;
+    }
+
     #hotel_center figure {
         max-width: none;
-        width: 300px;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
     }
 
     #hotel_center img {
@@ -541,7 +620,9 @@ footer a:hover {
         margin-bottom: 95px;
     }
 
-
+    #Activity_title {
+        margin-left: 20px;
+    }
     .activity_card2_last {
         display: flex;
     }
@@ -678,4 +759,6 @@ footer a:hover {
         margin-left: 0px;
         margin-bottom: 5px
     }
+
+
 }
